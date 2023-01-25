@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
-	"github.com/TwiN/gatus/v5/core"
+	"github.com/pschlump/gatus/alerting/alert"
+	"github.com/pschlump/gatus/core"
 )
 
 func TestAlertDefaultProvider_IsValid(t *testing.T) {

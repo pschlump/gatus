@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TwiN/gatus/v5/jsonpath"
-	"github.com/TwiN/gatus/v5/pattern"
+	"github.com/pschlump/gatus/jsonpath"
+	"github.com/pschlump/gatus/pattern"
 )
 
 // Placeholders

@@ -3,7 +3,7 @@ package metrics
 import (
 	"strconv"
 
-	"github.com/TwiN/gatus/v5/core"
+	"github.com/pschlump/gatus/core"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 )

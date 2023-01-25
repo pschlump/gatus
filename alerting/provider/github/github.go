@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
-	"github.com/TwiN/gatus/v5/core"
+	"github.com/pschlump/gatus/alerting/alert"
+	"github.com/pschlump/gatus/core"
 	"github.com/google/go-github/v48/github"
 	"golang.org/x/oauth2"
 )

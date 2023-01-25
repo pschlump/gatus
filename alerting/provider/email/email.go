@@ -5,8 +5,8 @@ import (
 	"math"
 	"strings"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
-	"github.com/TwiN/gatus/v5/core"
+	"github.com/pschlump/gatus/alerting/alert"
+	"github.com/pschlump/gatus/core"
 	gomail "gopkg.in/mail.v2"
 )
 

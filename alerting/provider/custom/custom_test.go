@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
-	"github.com/TwiN/gatus/v5/client"
-	"github.com/TwiN/gatus/v5/core"
-	"github.com/TwiN/gatus/v5/test"
+	"github.com/pschlump/gatus/alerting/alert"
+	"github.com/pschlump/gatus/client"
+	"github.com/pschlump/gatus/core"
+	"github.com/pschlump/gatus/test"
 )
 
 func TestAlertProvider_IsValid(t *testing.T) {

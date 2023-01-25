@@ -1,5 +1,8 @@
 BINARY=gatus
 
+all:
+	go build
+
 # Because there's a folder called "test", we need to make the target "test" phony
 .PHONY: test
 
@@ -38,3 +41,17 @@ frontend-build:
 
 frontend-run:
 	npm --prefix web/app run serve
+
+
+#--------------------------------------------------------------------------------------------------------------------
+
+
+linux:
+	go vet
+	GOOS=linux GOARCH=amd64 go build -o gatus_linux
+
+deploy: linux
+	scp gatus_linux philip@tcs.com:/home/philip/tmp
+	tar -czf deploy-gatus.tar.gz -C web/app .
+	scp deploy-gatus.tar.gz philip@tcs.com:/home/philip/tmp
+

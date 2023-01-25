@@ -3,7 +3,7 @@ package remote
 import (
 	"log"
 
-	"github.com/TwiN/gatus/v5/client"
+	"github.com/pschlump/gatus/client"
 )
 
 // NOTICE: This is an experimental alpha feature and may be updated/removed in future versions.

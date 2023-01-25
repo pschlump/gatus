@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TwiN/gatus/v5/pattern"
+	"github.com/pschlump/gatus/pattern"
 )
 
 func TestIntegrationQuery(t *testing.T) {

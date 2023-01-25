@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/TwiN/gatus/v5/security"
+	"github.com/pschlump/gatus/security"
 )
 
 // ConfigHandler is a handler that returns information for the front end of the application.

@@ -5,11 +5,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
-	"github.com/TwiN/gatus/v5/client"
-	"github.com/TwiN/gatus/v5/core"
-	"github.com/TwiN/gatus/v5/test"
 	"github.com/google/go-github/v48/github"
+	"github.com/pschlump/gatus/alerting/alert"
+	"github.com/pschlump/gatus/client"
+	"github.com/pschlump/gatus/core"
+	"github.com/pschlump/gatus/test"
 )
 
 func TestAlertDefaultProvider_IsValid(t *testing.T) {
@@ -25,22 +25,22 @@ func TestAlertDefaultProvider_IsValid(t *testing.T) {
 		},
 		{
 			Name:     "invalid-token",
-			Provider: AlertProvider{RepositoryURL: "https://github.com/TwiN/test", Token: "12345"},
+			Provider: AlertProvider{RepositoryURL: "https://github.com/pschlump/test", Token: "12345"},
 			Expected: false,
 		},
 		{
 			Name:     "missing-repository-name",
-			Provider: AlertProvider{RepositoryURL: "https://github.com/TwiN", Token: "12345"},
+			Provider: AlertProvider{RepositoryURL: "https://github.com/pschlump", Token: "12345"},
 			Expected: false,
 		},
 		{
 			Name:     "enterprise-client",
-			Provider: AlertProvider{RepositoryURL: "https://github.example.com/TwiN/test", Token: "12345"},
+			Provider: AlertProvider{RepositoryURL: "https://github.example.com/pschlump/test", Token: "12345"},
 			Expected: false,
 		},
 		{
 			Name:     "invalid-url",
-			Provider: AlertProvider{RepositoryURL: "github.com/TwiN/test", Token: "12345"},
+			Provider: AlertProvider{RepositoryURL: "github.com/pschlump/test", Token: "12345"},
 			Expected: false,
 		},
 	}
@@ -67,14 +67,14 @@ func TestAlertProvider_Send(t *testing.T) {
 	}{
 		{
 			Name:          "triggered-error",
-			Provider:      AlertProvider{RepositoryURL: "https://github.com/TwiN/test", Token: "12345"},
+			Provider:      AlertProvider{RepositoryURL: "https://github.com/pschlump/test", Token: "12345"},
 			Alert:         alert.Alert{Description: &firstDescription, SuccessThreshold: 5, FailureThreshold: 3},
 			Resolved:      false,
 			ExpectedError: true,
 		},
 		{
 			Name:          "resolved-error",
-			Provider:      AlertProvider{RepositoryURL: "https://github.com/TwiN/test", Token: "12345"},
+			Provider:      AlertProvider{RepositoryURL: "https://github.com/pschlump/test", Token: "12345"},
 			Alert:         alert.Alert{Description: &secondDescription, SuccessThreshold: 5, FailureThreshold: 3},
 			Resolved:      true,
 			ExpectedError: true,

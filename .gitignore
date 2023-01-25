@@ -1,4 +1,6 @@
 .idea
+note
+,*
 .vscode
 .DS_Store
 *.db

@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/TwiN/gatus/v5/config"
-	"github.com/TwiN/gatus/v5/config/web"
-	"github.com/TwiN/gatus/v5/core"
+	"github.com/pschlump/gatus/config"
+	"github.com/pschlump/gatus/config/web"
+	"github.com/pschlump/gatus/core"
 )
 
 func TestHandle(t *testing.T) {

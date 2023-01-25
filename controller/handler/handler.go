@@ -4,8 +4,8 @@ import (
 	"io/fs"
 	"net/http"
 
-	"github.com/TwiN/gatus/v5/config"
-	static "github.com/TwiN/gatus/v5/web"
+	"github.com/pschlump/gatus/config"
+	static "github.com/pschlump/gatus/web"
 	"github.com/TwiN/health"
 	"github.com/gorilla/mux"
 	"github.com/prometheus/client_golang/prometheus"

@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/TwiN/gatus/v5/alerting"
-	"github.com/TwiN/gatus/v5/config"
-	"github.com/TwiN/gatus/v5/config/maintenance"
-	"github.com/TwiN/gatus/v5/core"
-	"github.com/TwiN/gatus/v5/metrics"
-	"github.com/TwiN/gatus/v5/storage/store"
+	"github.com/pschlump/gatus/alerting"
+	"github.com/pschlump/gatus/config"
+	"github.com/pschlump/gatus/config/maintenance"
+	"github.com/pschlump/gatus/core"
+	"github.com/pschlump/gatus/metrics"
+	"github.com/pschlump/gatus/storage/store"
 )
 
 var (

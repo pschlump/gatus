@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/TwiN/gatus/v5/config"
-	"github.com/TwiN/gatus/v5/controller/handler"
+	"github.com/pschlump/gatus/config"
+	"github.com/pschlump/gatus/controller/handler"
 )
 
 var (

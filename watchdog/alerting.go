@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/TwiN/gatus/v5/alerting"
-	"github.com/TwiN/gatus/v5/core"
+	"github.com/pschlump/gatus/alerting"
+	"github.com/pschlump/gatus/core"
 )
 
 // HandleAlerting takes care of alerts to resolve and alerts to trigger based on result success or failure

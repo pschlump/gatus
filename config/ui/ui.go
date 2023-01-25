@@ -5,7 +5,7 @@ import (
 	"errors"
 	"html/template"
 
-	static "github.com/TwiN/gatus/v5/web"
+	static "github.com/pschlump/gatus/web"
 )
 
 const (

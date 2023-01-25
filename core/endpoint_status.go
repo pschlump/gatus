@@ -1,6 +1,6 @@
 package core
 
-import "github.com/TwiN/gatus/v5/util"
+import "github.com/pschlump/gatus/util"
 
 // EndpointStatus contains the evaluation Results of an Endpoint
 type EndpointStatus struct {

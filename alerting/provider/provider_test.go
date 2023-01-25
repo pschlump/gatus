@@ -3,7 +3,7 @@ package provider
 import (
 	"testing"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
+	"github.com/pschlump/gatus/alerting/alert"
 )
 
 func TestParseWithDefaultAlert(t *testing.T) {

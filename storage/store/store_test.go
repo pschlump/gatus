@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TwiN/gatus/v5/core"
-	"github.com/TwiN/gatus/v5/storage"
-	"github.com/TwiN/gatus/v5/storage/store/common"
-	"github.com/TwiN/gatus/v5/storage/store/common/paging"
-	"github.com/TwiN/gatus/v5/storage/store/memory"
-	"github.com/TwiN/gatus/v5/storage/store/sql"
+	"github.com/pschlump/gatus/core"
+	"github.com/pschlump/gatus/storage"
+	"github.com/pschlump/gatus/storage/store/common"
+	"github.com/pschlump/gatus/storage/store/common/paging"
+	"github.com/pschlump/gatus/storage/store/memory"
+	"github.com/pschlump/gatus/storage/store/sql"
 )
 
 var (

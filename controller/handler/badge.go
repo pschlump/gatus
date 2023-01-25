@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TwiN/gatus/v5/config"
-	"github.com/TwiN/gatus/v5/storage/store"
-	"github.com/TwiN/gatus/v5/storage/store/common"
-	"github.com/TwiN/gatus/v5/storage/store/common/paging"
+	"github.com/pschlump/gatus/config"
+	"github.com/pschlump/gatus/storage/store"
+	"github.com/pschlump/gatus/storage/store/common"
+	"github.com/pschlump/gatus/storage/store/common/paging"
 	"github.com/gorilla/mux"
 )
 

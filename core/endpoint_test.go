@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TwiN/gatus/v5/alerting/alert"
-	"github.com/TwiN/gatus/v5/client"
-	"github.com/TwiN/gatus/v5/core/ui"
-	"github.com/TwiN/gatus/v5/test"
+	"github.com/pschlump/gatus/alerting/alert"
+	"github.com/pschlump/gatus/client"
+	"github.com/pschlump/gatus/core/ui"
+	"github.com/pschlump/gatus/test"
 )
 
 func TestEndpoint(t *testing.T) {
