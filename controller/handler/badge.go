@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/gorilla/mux"
 	"github.com/pschlump/gatus/config"
 	"github.com/pschlump/gatus/storage/store"
 	"github.com/pschlump/gatus/storage/store/common"
 	"github.com/pschlump/gatus/storage/store/common/paging"
-	"github.com/gorilla/mux"
 )
 
 const (
@@ -29,9 +29,7 @@ const (
 	HealthStatusUnknown = "?"
 )
 
-var (
-	badgeColors = []string{badgeColorHexAwesome, badgeColorHexGreat, badgeColorHexGood, badgeColorHexPassable, badgeColorHexBad}
-)
+var badgeColors = []string{badgeColorHexAwesome, badgeColorHexGreat, badgeColorHexGood, badgeColorHexPassable, badgeColorHexBad}
 
 // UptimeBadge handles the automatic generation of badge based on the group name and endpoint name passed.
 //

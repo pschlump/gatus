@@ -50,8 +50,14 @@ linux:
 	go vet
 	GOOS=linux GOARCH=amd64 go build -o gatus_linux
 
-deploy: linux
+deploy_tcs: linux
 	scp gatus_linux philip@tcs.com:/home/philip/tmp
 	tar -czf deploy-gatus.tar.gz -C web/app .
 	scp deploy-gatus.tar.gz philip@tcs.com:/home/philip/tmp
+
+deploy: linux frontend-build
+	echo scp gatus_linux pschlump@nfc-auth.com:/tmp
+	echo tar -czf deploy-gatus.tar.gz -C web/static .
+	echo scp deploy-gatus.tar.gz pschlump@nfc-auth.com:/tmp
+	scp ./config/config.yaml  pschlump@nfc-auth.com:/tmp
 

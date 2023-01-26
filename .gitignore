@@ -8,3 +8,9 @@ note
 *.db-wal
 gatus
 config/config.yml
+config/config.yaml
+config/prod-config.txt
+deploy-gatus.tar.gz
+gatus
+gatus_linux
+x

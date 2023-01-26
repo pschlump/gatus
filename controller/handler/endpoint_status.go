@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/TwiN/gocache/v2"
+	"github.com/gorilla/mux"
 	"github.com/pschlump/gatus/client"
 	"github.com/pschlump/gatus/config"
 	"github.com/pschlump/gatus/config/remote"
@@ -15,17 +17,11 @@ import (
 	"github.com/pschlump/gatus/storage/store"
 	"github.com/pschlump/gatus/storage/store/common"
 	"github.com/pschlump/gatus/storage/store/common/paging"
-	"github.com/TwiN/gocache/v2"
-	"github.com/gorilla/mux"
 )
 
-const (
-	cacheTTL = 10 * time.Second
-)
+const cacheTTL = 10 * time.Second
 
-var (
-	cache = gocache.NewCache().WithMaxSize(100).WithEvictionPolicy(gocache.FirstInFirstOut)
-)
+var cache = gocache.NewCache().WithMaxSize(100).WithEvictionPolicy(gocache.FirstInFirstOut)
 
 // EndpointStatuses handles requests to retrieve all EndpointStatus
 // Due to how intensive this operation can be on the storage, this function leverages a cache.

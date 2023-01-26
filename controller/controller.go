@@ -12,11 +12,9 @@ import (
 	"github.com/pschlump/gatus/controller/handler"
 )
 
-var (
-	// server is the http.Server created by Handle.
-	// The only reason it exists is for testing purposes.
-	server *http.Server
-)
+// server is the http.Server created by Handle.
+// The only reason it exists is for testing purposes.
+var server *http.Server
 
 // Handle creates the router and starts the server
 func Handle(cfg *config.Config) {

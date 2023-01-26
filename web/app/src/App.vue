@@ -43,12 +43,12 @@
   </div>
 
   <Tooltip :result="tooltip.result" :event="tooltip.event"/>
-  <Social/>
+  <!-- <Social/> -->
 </template>
 
 
 <script>
-import Social from './components/Social.vue'
+// import Social from './components/Social.vue'
 import Tooltip from './components/Tooltip.vue';
 import {SERVER_URL} from "@/main";
 import Loading from "@/components/Loading";
@@ -57,7 +57,7 @@ export default {
   name: 'App',
   components: {
     Loading,
-    Social,
+    // Social,
     Tooltip
   },
   methods: {

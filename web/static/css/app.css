@@ -1,4 +1,4 @@
-#social[data-v-a4b3d200]{position:fixed;right:5px;bottom:5px;padding:5px;margin:0;z-index:100}#social img[data-v-a4b3d200]{opacity:.3}#social img[data-v-a4b3d200]:hover{opacity:1}#tooltip{position:fixed;background-color:#fff;border:1px solid #d3d3d3;border-radius:4px;padding:6px;font-size:13px}#tooltip code{color:#212529;line-height:1}#tooltip .tooltip-title{font-weight:700;margin-bottom:0;display:block;margin-top:8px}#tooltip>.tooltip-title:first-child{margin-top:0}
+#tooltip{position:fixed;background-color:#fff;border:1px solid #d3d3d3;border-radius:4px;padding:6px;font-size:13px}#tooltip code{color:#212529;line-height:1}#tooltip .tooltip-title{font-weight:700;margin-bottom:0;display:block;margin-top:8px}#tooltip>.tooltip-title:first-child{margin-top:0}
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
